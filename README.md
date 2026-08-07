@@ -23,6 +23,8 @@ Repo: https://github.com/Mandeep-Singh-Chawla/DeepEval
 | 11 | Misuse | `tests/test_11_misuse.py` | input, actual_output | LLMTestCase |
 | 12 | PIILeakage | `tests/test_12_pii_leakage.py` | input, actual_output | LLMTestCase |
 | 13 | PromptAlignment | `tests/test_13_prompt_alignment.py` | input, actual_output (+ prompt_instructions on metric) | LLMTestCase |
+| 14 | RoleViolation | `tests/test_14_role_violation.py` | input, actual_output (+ role on metric) | LLMTestCase |
+| 15 | ToolCorrectness | `tests/test_15_tool_correctness.py` | input, tools_called, expected_tools | LLMTestCase |
 
 ## Setup
 
@@ -47,5 +49,6 @@ deepeval test run tests/test_04_hallucination.py
 
 - `actual_output` is hardcoded for demos. In real use, call your LLM app and set that field.
 - Hallucination uses `context`. RAG grounding uses Faithfulness + `retrieval_context`.
-- Metrics 9–12 support safety / guardrail-style evaluation of outputs.
+- Metrics 9–12 and 14 support safety / guardrail-style evaluation of outputs.
+- Metric 15 covers agent tool-calling correctness.
 - Optional: set `CONFIDENT_API_KEY` to upload runs to Confident AI.
