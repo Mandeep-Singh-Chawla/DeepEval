@@ -20,7 +20,7 @@ Repo: https://github.com/Mandeep-Singh-Chawla/DeepEval
 | 8 | TaskCompletion | `tests/test_08_task_completion.py` | input, actual_output | LLMTestCase |
 | 9 | Toxicity | `tests/test_09_toxicity.py` | input, actual_output | LLMTestCase |
 | 10 | Bias | `tests/test_10_bias.py` | input, actual_output | LLMTestCase |
-| 11 | Misuse | `tests/test_11_misuse.py` | input, actual_output | LLMTestCase |
+| 11 | Misuse | `tests/test_11_misuse.py` | input, actual_output (+ domain on metric) | LLMTestCase |
 | 12 | PIILeakage | `tests/test_12_pii_leakage.py` | input, actual_output | LLMTestCase |
 | 13 | PromptAlignment | `tests/test_13_prompt_alignment.py` | input, actual_output (+ prompt_instructions on metric) | LLMTestCase |
 | 14 | RoleViolation | `tests/test_14_role_violation.py` | input, actual_output (+ role on metric) | LLMTestCase |
