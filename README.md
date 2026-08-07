@@ -4,23 +4,23 @@ Test suite to evaluate LLM apps showing DeepEval metrics with sample test cases.
 
 ## What this shows
 
-| # | Metric | Script | Required fields | Test case |
-|---|--------|--------|-----------------|-----------|
-| 1 | GEval | `tests/test_01_g_eval.py` | fields in `evaluation_params` | LLMTestCase |
-| 2 | AnswerRelevancy | `tests/test_02_answer_relevancy.py` | input, actual_output | LLMTestCase |
-| 3 | Faithfulness | `tests/test_03_faithfulness.py` | input, actual_output, retrieval_context | LLMTestCase |
-| 4 | Hallucination | `tests/test_04_hallucination.py` | input, actual_output, context | LLMTestCase |
-| 5 | ContextualRelevancy | `tests/test_05_contextual_relevancy.py` | input, retrieval_context | LLMTestCase |
-| 6 | ContextualPrecision | `tests/test_06_contextual_precision.py` | input, retrieval_context, expected_output | LLMTestCase |
-| 7 | ContextualRecall | `tests/test_07_contextual_recall.py` | input, retrieval_context, expected_output | LLMTestCase |
-| 8 | TaskCompletion | `tests/test_08_task_completion.py` | input, actual_output | LLMTestCase |
-| 9 | Toxicity | `tests/test_09_toxicity.py` | input, actual_output | LLMTestCase |
-| 10 | Bias | `tests/test_10_bias.py` | input, actual_output | LLMTestCase |
-| 11 | Misuse | `tests/test_11_misuse.py` | input, actual_output (+ domain on metric) | LLMTestCase |
-| 12 | PIILeakage | `tests/test_12_pii_leakage.py` | input, actual_output | LLMTestCase |
-| 13 | PromptAlignment | `tests/test_13_prompt_alignment.py` | input, actual_output (+ prompt_instructions on metric) | LLMTestCase |
-| 14 | RoleViolation | `tests/test_14_role_violation.py` | input, actual_output (+ role on metric) | LLMTestCase |
-| 15 | ToolCorrectness | `tests/test_15_tool_correctness.py` | input, tools_called, expected_tools | LLMTestCase |
+| # | Metric | Script | Required fields |
+|---|--------|--------|-----------------|
+| 1 | GEval | `tests/test_01_g_eval.py` | fields in `evaluation_params` |
+| 2 | AnswerRelevancy | `tests/test_02_answer_relevancy.py` | input, actual_output |
+| 3 | Faithfulness | `tests/test_03_faithfulness.py` | input, actual_output, retrieval_context |
+| 4 | Hallucination | `tests/test_04_hallucination.py` | input, actual_output, context |
+| 5 | ContextualRelevancy | `tests/test_05_contextual_relevancy.py` | input, retrieval_context |
+| 6 | ContextualPrecision | `tests/test_06_contextual_precision.py` | input, retrieval_context, expected_output |
+| 7 | ContextualRecall | `tests/test_07_contextual_recall.py` | input, retrieval_context, expected_output |
+| 8 | TaskCompletion | `tests/test_08_task_completion.py` | input, actual_output |
+| 9 | Toxicity | `tests/test_09_toxicity.py` | input, actual_output |
+| 10 | Bias | `tests/test_10_bias.py` | input, actual_output |
+| 11 | Misuse | `tests/test_11_misuse.py` | input, actual_output (+ domain on metric) |
+| 12 | PIILeakage | `tests/test_12_pii_leakage.py` | input, actual_output |
+| 13 | PromptAlignment | `tests/test_13_prompt_alignment.py` | input, actual_output (+ prompt_instructions on metric) |
+| 14 | RoleViolation | `tests/test_14_role_violation.py` | input, actual_output (+ role on metric) |
+| 15 | ToolCorrectness | `tests/test_15_tool_correctness.py` | input, tools_called, expected_tools |
 
 ## Setup
 
