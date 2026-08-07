@@ -1,10 +1,6 @@
-# DeepEval — Top Metrics Demo
+# DeepEval — Metrics
 
-Demo suite for QA / engineering leaders to evaluate LLM apps with [DeepEval](https://github.com/confident-ai/deepeval).
-
-Repo: https://github.com/Mandeep-Singh-Chawla/DeepEval
-
-> Demo suite showing DeepEval metrics with sample test cases. Replace `actual_output` with your app’s response to evaluate a real system.
+Test suite to evaluate LLM apps showing DeepEval metrics with sample test cases. Replace `actual_output` with your app’s response to evaluate a real system.
 
 ## What this shows
 
