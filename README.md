@@ -24,13 +24,18 @@ Test suite to evaluate LLM apps showing DeepEval metrics with sample test cases.
 
 ## Setup
 
+Python 3.9 or newer. Tests call a judge model, so a Google AI key is required: https://aistudio.google.com/apikey
+
 ```bash
+git clone https://github.com/Mandeep-Singh-Chawla/DeepEval.git
+cd DeepEval
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-# edit .env and add your API key
 ```
+
+In `.env`, set `GOOGLE_API_KEY`. Leave `USE_GEMINI_MODEL=YES`. To use OpenAI instead, set `OPENAI_API_KEY` and turn the Gemini flag off.
 
 ## Run
 
